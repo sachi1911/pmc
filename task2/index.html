@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class = "header">
+        <h1 style="color: white;"><b>Registration form</b></h1>
+
+    </div>
+    <div class="form">
+    
+        <form  name="myForm" onsubmit="return validateForm()" method="GET" >
+
+            <div class="formdesign" id="name">
+            First Name : <br><input type="text" name="fname" required placeholder="Enter Firstname"><br><b><span class="formerror"></b></span>
+            
+            </div>
+            <div class="formdesign" id="lname">
+                Last Name : <br><input type="text" name="flname" required placeholder="Enter lastname"><br><b><span class="formerror"></b></span>
+                
+            </div>
+        
+            <div class="rad" id="Gender" >
+                Gender :<br>
+                    <input type="radio" id="male" name="fav_language" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="Female" name="fav_language" value="Female">
+                    <label for="Female">Female</label><br>
+                </div>
+            <p>
+            <div class="formdesign" id="email">
+                Email : <br><input type="email" name="femail" required placeholder="Enter email"><b><span class="formerror"></b></span>
+            
+            </div>
+            <div class="formdesign" id="phone">
+                Phone : <br><input type="text" name="fphone" pattern="^\d{10}$" required  placeholder="Must be 10 digit number"><b><span class="formerror"></b></span>
+            
+            </div>
+            <div class="formdesign" id="DOB">
+                DOB : <br><input type="date" name="fdob" placeholder="Date of birth"/><b><span class="formerror"></b></span>
+            
+            </div>
+            <div class="formdesign" id="pass">
+                Password : <br><input type="password" name="fpass"  required  placeholder="Enter Password"><b><span class="formerror"></b></span>
+            
+            </div>
+            <div class="formdesign" id="cpass">
+                Confirm Password : <br><input type="password" name="fcpass"  required  placeholder="Re enter Password"><b><span class="formerror"></b></span>
+            
+            </div>
+                
+            <div><input class="button" type="submit" value="submit" ></div>
+            
+
+        </form>
+    </div>
+    
+</body> 
+
+
+
+</html>
